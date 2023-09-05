@@ -1,0 +1,33 @@
+{
+    "name": "HarfangLab",
+    "id": "HarfangLab",
+    "version": "1.0.0",
+    "description": "This plugin is used to fetch HarfangLab IOCs.",
+    "patch_supported": true,
+    "push_supported": true,
+    "configuration": [
+         {
+            "label": "Tenant URL",
+            "key": "fqdn",
+            "type": "text",
+            "default": "https://XXXXX.hurukai.io:8443",
+            "mandatory": true,
+            "description": "Same value as your tenant HarfangLab tenant platform."
+        },
+        {
+            "label": "API Client Secret",
+            "key": "apikey",
+            "type": "password",
+            "default": "",
+            "mandatory": true
+        },
+        {
+            "label": "IOC source name",
+            "key": "iocsourcename",
+            "type": "text",
+            "default": "",
+            "mandatory": true,
+            "description": "Please add the IOC list name."
+        }
+    ]
+}
